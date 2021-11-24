@@ -1,0 +1,68 @@
+.grid-container{
+    /* border: 1em solid grey;
+    border-radius: 1em; */
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr;
+    /* grid-template-rows: 1fr; */
+    grid-gap: 50px;
+    margin-left: 200px;
+    
+}
+
+.heroes{
+    display:grid;
+    grid-gap: 20px;
+    margin: 20px;
+    grid-template-columns: .25fr .25fr;
+    /* grid-template-rows: repeat(2, 500fr); */
+}
+.villains{
+    display:grid;
+    grid-gap: 20px;
+    margin: 20px;
+    grid-template-columns: .25fr .25fr;
+    /* grid-template-rows: repeat(2, 50fr); */
+}
+.heroes>div:nth-child(2){
+    border: .1em transparent gray;
+    padding: 1em;
+    height: 40vh;
+    border-radius: .25em;
+    text-align: center;
+    box-shadow: 1px 2px 5px 2px rgb(177, 174, 174);
+}
+.heroes>div:nth-child(1){
+    border: .1em transparent grey;
+    padding: 1em;
+    border-radius: .25em;
+    text-align: center;
+    box-shadow: 1px 2px 5px 2px rgb(177, 174, 174);
+}
+.villains>div:nth-child(1){
+    border: .1em transparent grey;
+    border-radius: .25em;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 1px 2px 5px 2px rgb(177, 174, 174);
+}
+.villains>div:nth-child(2){
+    border: .1em transparent grey;
+    border-radius: .25em;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 1px 2px 5px 2px rgb(177, 174, 174);
+}
+.scores{
+    display: grid;
+    text-align: center;
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+#strength{
+    font-size: 4rem;
+    font-weight: 400;
+}
